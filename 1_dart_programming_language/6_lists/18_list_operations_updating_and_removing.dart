@@ -10,7 +10,7 @@ void main() {
     Parameter	Meaning
       - start	Starting index
       - end	Ending index (NOT included)
-      - newValues	New elements to insert
+      - newValues:	New elements to insert
   */
   print(list);
   // [5, 6, 30]
