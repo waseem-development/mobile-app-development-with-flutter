@@ -14,8 +14,7 @@ void main() {
 
 
  /* 
-  final: A final variable is set once and cannot be changed after that. Its value is determined when the
-  program runs.
+  final: A final variable is set once and cannot be changed after that. Its value is determined when the program runs.
  */
   final city = 10;
    print(city);
