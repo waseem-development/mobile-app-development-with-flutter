@@ -87,11 +87,30 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            print("Hello");
-          },
-          child: Icon(Icons.person),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                print("Hello");
+              },
+              child: Icon(Icons.person),
+            ),
+            Text("Hello World"),
+            ElevatedButton(
+              onPressed: () {
+                print("Second Button");
+              },
+              child: Icon(Icons.pages),
+            ),
+            Text("Bye World"),
+            ElevatedButton(
+              onPressed: () {
+                print("Done");
+              },
+              child: Icon(Icons.bike_scooter),
+            ),
+            Text("All is well"),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
