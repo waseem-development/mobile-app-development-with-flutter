@@ -48,11 +48,8 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text("HEllo World"),
-            Text("Bye World"),
-          ],
-        )
+          children: [Text("HEllo World"), Text("Bye World")],
+        ),
       ),
     );
   }

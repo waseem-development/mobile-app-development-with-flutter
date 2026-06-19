@@ -47,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        leading: Icon(Icons.notification_add, color: Colors.amber),
       ),
 
       // body: Center(
@@ -183,58 +184,164 @@ class _MyHomePageState extends State<MyHomePage> {
       //     ),
       //   ],
       // ),
-      body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(20.0),
-          padding: const EdgeInsets.all(20.0),
-          decoration: BoxDecoration(
-            color: Colors.deepPurple,
-            borderRadius: BorderRadius.circular(15.0),
+      // body: Center(
+      //   child: Container(
+      //     margin: const EdgeInsets.all(20.0),
+      //     padding: const EdgeInsets.all(20.0),
+      //     decoration: BoxDecoration(
+      //       color: Colors.deepPurple,
+      //       borderRadius: BorderRadius.circular(15.0),
+      //     ),
+      //     child: Column(
+      //       children: [
+      //         Text(
+      //           "Title",
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 20.0,
+      //             fontWeight: FontWeight.bold,
+      //           ),
+      //         ),
+      //         const SizedBox(height: 10.0),
+      //         Row(
+      //           children: [
+      //             Container(
+      //               padding: const EdgeInsets.symmetric(
+      //                 horizontal: 12.0,
+      //                 vertical: 6.0,
+      //               ),
+      //               margin: const EdgeInsets.only(right: 8.0),
+      //               decoration: BoxDecoration(
+      //                 color: Colors.orange,
+      //                 borderRadius: BorderRadius.circular(8.0),
+      //               ),
+      //               child: Text("Flutter"),
+      //             ),
+      //             Container(
+      //               padding: const EdgeInsets.symmetric(
+      //                 horizontal: 12.0,
+      //                 vertical: 6.0,
+      //               ),
+      //               decoration: BoxDecoration(
+      //                 color: Colors.greenAccent,
+      //                 borderRadius: BorderRadius.circular(8.0),
+      //               ),
+      //               child: Text(
+      //                 "Dart",
+      //                 style: TextStyle(color: Colors.black87),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
+      // body: Image.network(
+      //   "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?",
+      //   height: double.infinity,
+      //   fit: BoxFit.cover,
+      // ),
+      // body: Image.asset(
+      //   "assets/images/worker.jpg",
+      //   height: double.infinity,
+      //   width: double.infinity,
+      //   fit: BoxFit.fitHeight,
+      // ),
+      // body: Container(
+      //   width: 200,
+      //   height: 200,
+      //   child: Image.asset("assets/images/worker.jpg", fit: BoxFit.fill),
+      // ),
+      // body: Stack(
+      //   children: [
+      //     Image.asset(
+      //       "assets/images/worker.jpg",
+      //       height: 300,
+      //       fit: BoxFit.cover,
+      //     ),
+      //     SizedBox(
+      //       height: 300,
+      //       child: Center(child: Text("Waseem\'s Flutter App")),
+      //     ),
+      //   ],
+      // ),
+      // body: Stack(
+      //   children: [
+      //     // 1st: Notification icon + badge
+      //     Positioned(
+      //       top: 50,
+      //       left: 50,
+      //       child: Stack(
+      //         children: [
+      //           Icon(Icons.notifications, size: 40),
+
+      //           Positioned(
+      //             right: 0,
+      //             child: CircleAvatar(
+      //               radius: 8,
+      //               child: Text("3", style: TextStyle(fontSize: 10)),
+      //             ),
+      //           ),
+      //         ],
+      //       ),
+      //     ),
+
+      //     // 2nd: Profile + edit icon
+      //     Positioned(
+      //       bottom: 50,
+      //       right: 50,
+      //       child: Stack(
+      //         children: [
+      //           CircleAvatar(
+      //             radius: 30,
+      //             backgroundImage: AssetImage("assets/images/waseem.jpeg"),
+      //             // child: Text("Waseem Ahmed"),
+      //           ),
+
+      //           Positioned(
+      //             bottom: 0,
+      //             right: 0,
+      //             child: Icon(Icons.edit, size: 16),
+      //           ),
+      //         ],
+      //       ),
+      //     ),
+      //   ],
+      // ),
+
+      // --------- ListTile ---------
+      // body: Stack(
+      //   children: [
+      //     SizedBox(
+      //       height: 300,
+      //       child: Center(child: Text("Waseem\'s Flutter App")),
+      //     ),
+
+      // ListTile(
+      //   leading: Icon(Icons.join_full),
+      //   tileColor: Colors.red,
+      //   title: Text("Hello World"),
+      //   trailing: Text("Bye World"),
+      //   onTap: () => showDialog(
+      //     context: context,
+      //     builder: (_) => const AlertDialog(title: Text("Clicked")),
+      //   ),
+      // ),
+
+      // ],
+      // ),
+
+      // --------- Wrap ---------
+      body: Wrap(
+        children: [
+          Text(
+            "fkd fksdf jalkfjkladj flkdasjflka jdkfj fkjafkjdkjdjfksdjfkjsdakfjsdalkf jaslkd fjlkdsjfkdjfkjfdj",
           ),
-          child: Column(
-            children: [
-              Text(
-                "Title",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 10.0),
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12.0,
-                      vertical: 6.0,
-                    ),
-                    margin: const EdgeInsets.only(right: 8.0),
-                    decoration: BoxDecoration(
-                      color: Colors.orange,
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    child: Text("Flutter"),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12.0,
-                      vertical: 6.0,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.greenAccent,
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    child: Text(
-                      "Dart",
-                      style: TextStyle(color: Colors.black87),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+          Text("fjlkdsjfkdjfkjfdj"),
+          Text("fkd fksdf jalkfjkladj flkdasjflka fjlkdsjfkdjfkjfdj"),
+          Text("fkd fksdf jalkfjkladj flkdasjflka"),
+        ],
       ),
     );
   }
