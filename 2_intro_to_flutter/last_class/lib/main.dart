@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Last Class',
       // darkTheme: Darktheme,
       theme: ThemeData(
-        colorScheme: .fromSeed(
+        colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.blueAccent,
           brightness: Brightness.dark,
         ),
@@ -51,7 +51,14 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 400,
               child: Center(
                 child: TextField(
-                  onChanged: (val) => {val = name, stdout.write(val)},
+                  onChanged: (val) {
+                    setState(() {
+                      name = val;
+                      debugPrint(
+                        name,
+                      ); // shows in the debug console reliably, works everywhere
+                    });
+                  },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     // fillColor: Color(Colors.grey),

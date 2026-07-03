@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Container(
+                  SizedBox(
                     width: 955,
                     height: 275,
                     child: Image.asset(
@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 10, height: 10),
-                  Container(
+                  SizedBox(
                     width: 955,
                     height: 275,
                     child: Image.asset(
@@ -79,7 +79,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 10, height: 10),
-                  Container(
+                  SizedBox(
                     width: 955,
                     height: 275,
                     child: Image.asset(
