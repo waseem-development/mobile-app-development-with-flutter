@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       },
                       controller: passwordcontroller,
                       obscureText: _obscure,
-                      obscuringCharacter: "*",
+                      obscuringCharacter: "*c",
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: "Password",
