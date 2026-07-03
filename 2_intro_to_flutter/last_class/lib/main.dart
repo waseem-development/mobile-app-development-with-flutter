@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-String name = "Waseem";
+final TextEditingController _nameController = TextEditingController();
+String name = "";
+String email = "";
 void main() {
   runApp(const MyApp());
 }
@@ -34,6 +36,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void dispose() {
+    _nameController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,6 +81,35 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   // obscureText: ,
                 ),
+              ),
+            ),
+          ),
+          Center(
+            child: SizedBox(
+              width: 400,
+              child: Column(
+                children: [
+                  TextField(
+                    controller: _nameController,
+                    onChanged: (val) {
+                      setState(() {
+                        email = val;
+                        debugPrint(email);
+                      });
+                    },
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: "Email",
+                      hintText: "Enter your email",
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      debugPrint(_nameController.text);
+                    },
+                    child: const Text("Print Email"),
+                  ),
+                ],
               ),
             ),
           ),
