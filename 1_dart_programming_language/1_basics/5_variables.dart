@@ -12,12 +12,12 @@ void main() {
   int? num;
   print("Value of num is: ${num}");
 
-
- /* 
-  final: A final variable is set once and cannot be changed after that. Its value is determined when the program runs.
+  /* 
+  final: A final variable is set once and cannot be changed after that. Its value is determined when the program runs (runtime).
  */
-  final city = 10;
-   print(city);
+  final city = "Quetta";
+  // city = "Karachi"; // ❌;
+
   //    const: A const variable must be known at compile time (before the program even runs). It is also permanent
   const pi = 3.14;
   const area = pi * 12 * 12; // Valid: computed from other constants
