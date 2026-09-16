@@ -1,3 +1,17 @@
 {
-    "cmake.sourceDirectory": "/home/waseem/mobile-app-development-with-flutter/2_intro_to_flutter/mini_learning_project/linux"
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
+    "java.autobuild.enabled": false,
+    "java.server.launchMode": "LightWeight",
+    "java.gradle.buildServer.enabled": "off",
+    "gradle.autoDetect": "off",
+    "gradle.nestedProjects": false,
+    "java.import.exclusions": [
+        "**/node_modules/**",
+        "**/.metadata/**",
+        "**/archetype/**",
+        "**/META-INF/maven/**",
+        "**/android/**",
+        "**/2_intro_to_flutter/**"
+    ]
 }

@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -35,40 +36,45 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Login"),
+        child: Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisSize: MainAxisSize.min,
 
-            SizedBox(height: 20),
-
-            SizedBox(
-              width: 300,
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: "Username",
-                  border: OutlineInputBorder(),
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                height: 100.0,
+                width: 200.0,
+                margin: const EdgeInsets.all(50.0),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25.0),
+                  color: Colors.red,
+                ),
+                child: const Text(
+                  "Hello",
+                  style: TextStyle(color: Colors.amber),
                 ),
               ),
-            ),
-
-            SizedBox(height: 10),
-
-            SizedBox(
-              width: 300,
-              child: TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: "Password",
-                  border: OutlineInputBorder(),
+              Container(
+                height: 100.0,
+                width: 200.0,
+                margin: const EdgeInsets.all(50.0),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25.0),
+                  color: Colors.red,
+                ),
+                child: const Text(
+                  "Hello",
+                  style: TextStyle(color: Colors.amber),
                 ),
               ),
-            ),
-
-            SizedBox(height: 20),
-
-            ElevatedButton(onPressed: () {}, child: const Text("Login")),
-          ],
+            ],
+          ),
         ),
       ),
     );
