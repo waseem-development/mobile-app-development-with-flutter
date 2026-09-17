@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Column(
